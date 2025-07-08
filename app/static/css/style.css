@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'Dongle';
+  src: url('../Dongle/Dongle-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dongle';
+  src: url('../Dongle/Dongle-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dongle';
+  src: url('../Dongle/Dongle-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+body{
+    margin:0;
+    background: #f8f9fa;
+}
+.container{
+    max-width: 800px;
+    padding: 10px;
+    margin:auto;
+}
+header{
+    background: linear-gradient(to_right,#0062e6,#33aeff);
+    color:white;
+    padding:20px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    background-color: rgb(80, 191, 228);
+}
+
+header h1{
+    margin:0;
+    text-align: center;
+    letter-spacing: 1px;
+    color:black;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Dongle',sans-serif;
+}
+
+nav{
+    text-align: center;
+    margin-top:5px;
+    font-weight: 400;
+    font-family: 'Dongle',sans-serif;
+    font-size: 30px;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    margin:0 15px;
+}
+nav a:hover{
+    color:black;
+}
+
+footer{
+    background-color:#27272761;
+    color:white;
+    padding: 5px;
+    text-align:center;
+    margin-top:1px;
+    font-size: 14px;
+    box-shadow: 0 -4px 10px rgb(43, 42, 42);
+    font-family: 'Dongle',sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+footer p{
+    margin:0;
+
+}
+
+.login-box{
+    max-width: 400px;
+    margin:20px auto;
+    padding:1px 30px 30px 30px ;
+    background-color:rgb(139, 230, 248);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.login-box h2{
+    font-family:"Dongle",sans-serif ;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.form-group{
+    margin-bottom: 20px;  
+}
+.form-group label{
+    font-weight:400;
+    margin-bottom: 6px;
+    font-family: "Dongle",sans-serif;
+    font-size: 30px;
+}
+
+.form-group input{
+    width:100%;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+    font-family: "Dongle",sans-serif;
+    font-weight:400;
+    font-size: 25px;
+}
+.btn{
+    background-color: rgb(38, 143, 254);
+    color:white;
+    border:none;
+    padding:12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor:pointer;
+    width:100%;
+}
+.btn:hover{
+    background-color:rgb(6, 97, 244) ;
+}
+.task-box{
+    max-width: 700px;
+    margin:20px auto;
+    background-color: white;
+    padding:30px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px grey;
+
+}
+.task-box h2{
+    font-family: "Dongle",sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color:black;
+}
+
+.task-form{
+    display:flex;
+    gap:10px;
+    margin-bottom: 25px;
+    font-family: "Dongle",sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+.task-form input[type="text"]{
+    flex:1;
+    padding: 6px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Dongle",sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+.task-form .btn{
+    padding: 12px 20px;
+    font-size: 15px;
+
+}
+.task-table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+.task-table th,
+.task-table td{
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-family: "Dongle",sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+}
+.task-table th{
+    background-color:beige;
+}
+.btn-clear{
+    color: white;
+    background-color: rgb(250, 94, 94);
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: "Dongle",sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    width:150px;
+}
+.clear-form{
+    text-align: right;
+    margin-top: 20px;
+}
+.btn-clear:hover{
+    background-color: rgba(254, 15, 15, 0.854);
+}
+.badge{
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color:white;
+
+}
+.badge.pending{
+    background-color: #f4b400;
+}
+.badge.working{
+    background-color: rgb(14, 180, 236);
+}
+.badge.done{
+    background-color:green;
+}
+
+.btn-small{
+    background-color: azure;
+    padding: 5px 20px;
+    border:1px solid black;
+    border-radius: 5px;
+    color:black;
+    cursor:pointer;
+    font-family: "Dongle",sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+.btn-small:hover{
+    background-color:lightblue;
+
+}
+.flash.success{
+    text-align: center;
+    font-family: "Dongle",sans-serif;
+    font-weight: 400px;
+    font-size: 30px;
+    color:green;
+}
+.flash.danger{
+    text-align: center;
+    font-family: "Dongle",sans-serif;
+    font-weight: 400px;
+    font-size: 30px;
+    color:red;
+}
+.flash.info{
+    text-align: center;
+    font-family: "Dongle",sans-serif;
+    font-weight: 400px;
+    font-size: 30px;
+    color:blue;
+
+}
