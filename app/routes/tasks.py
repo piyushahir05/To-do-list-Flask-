@@ -40,7 +40,7 @@ def toggle_status(task_id):
         else:
             task.status ='Pending'
 
-            db.session.commit()
+        db.session.commit()
     return redirect(url_for('tasks.view_tasks') + f"#task-{task.id}")
 
 
