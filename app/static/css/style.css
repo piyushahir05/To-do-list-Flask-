@@ -260,3 +260,39 @@ footer p{
     color:blue;
 
 }
+.register-form h2{
+    text-align: center;
+    font-family: "Dongle",sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+.register-form{
+    box-shadow: 7px 7px 7px 7px grey;
+    max-width:600px;
+    margin:10px auto;
+    background-color:silver ;
+}
+.register-group{
+    display: grid;
+    padding: 15px;
+    font-family: "Dongle",sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-left:20px;
+}
+.register-form p{
+    font-family: "Dongle",sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.register-form input{
+    font-family: "Dongle",sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 10px;
+    width:95%;
+}
+.register-form input[type="submit"]{
+    margin-top: 35px;
+}
+
