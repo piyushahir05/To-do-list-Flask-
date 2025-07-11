@@ -10,7 +10,23 @@ def view_tasks():
         return redirect(url_for('auth.login'))
 
     tasks = Task.query.filter_by(user_id=session['user_id']).all()
-    return render_template('tasks.html',tasks=tasks)
+    total = len(tasks)
+   
+    progress_score=0
+    for task in tasks:
+        if task.status == "Working":
+            progress_score+=0.3
+        elif task.status == "Done":
+            progress_score+=1.0
+    
+    progress = int((progress_score / total) * 100) if total > 0 else 0
+    last_progress = session.get('current_progress', 0)
+    session['current_progress'] = progress
+
+
+
+    return render_template('tasks.html',tasks=tasks,
+        progress=progress,total=total,last_progress=last_progress)
 
 @tasks_bp.route('/add',methods=["POST"])
 def add_task():

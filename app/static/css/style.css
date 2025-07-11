@@ -296,3 +296,27 @@ footer p{
     margin-top: 35px;
 }
 
+.progress-container {
+    margin: 20px 0;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 30px;
+  margin: 20px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4caf50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: width 0.6s ease;
+  width: 0%; /* Default starting width */
+}
