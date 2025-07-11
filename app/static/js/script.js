@@ -13,17 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.removeItem("scrollY");
   }
 
-  // ✅ Smooth progress bar animation
-const fill = document.querySelector(".progress-fill");
-  if (fill) {
-    const start = parseFloat(fill.getAttribute("data-start")) || 0;
-    const end = parseFloat(fill.getAttribute("data-end")) || 0;
+  const fill = document.querySelector(".progress-fill");
 
-    // Start from previous value
+  if (fill) {
+    const end = parseFloat(fill.getAttribute("data-end")) || 0;
+    const start = parseFloat(localStorage.getItem("prevProgress")) || 0;
+
     fill.style.width = start + "%";
 
-    // Animate to current value
     requestAnimationFrame(() => {
+      fill.style.transition = "width 1s ease-in-out";
       fill.style.width = end + "%";
     });
-  }});
+
+    localStorage.setItem("prevProgress", end);
+  }
+  });
